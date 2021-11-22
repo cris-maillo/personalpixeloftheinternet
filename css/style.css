@@ -1,0 +1,83 @@
+* { 
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* @font-face {
+	font-family: "HKGroteskWide-Light";
+	src: url("../css/HKGroteskWide-Light.woff") format("woff"),
+  } 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap');
+
+html, body {
+	min-height: 100%;
+	background: #ffffff;
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: 300;
+	color: #000000;
+	line-height: 1.6;
+}
+	
+body, ul, ol, dl {
+	margin: 0;
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+	
+h1, h2 {
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 10px 0;
+}
+	
+p { 
+	margin: 10px p;
+} 
+	
+img { 
+	width: 100%;
+}
+
+.navbar {
+	height: 70px;
+}
+
+.navbar ul{
+	display: inline;
+}
+
+.navbar a{
+	padding: 10px;
+	margin: 0 5px;
+	float: left;
+}
+
+.navbar a:hover{
+	border-bottom: 1px #000 solid;
+}
+
+
+.heads {
+	height: 100px;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0 40px;
+}
+
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
