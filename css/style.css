@@ -54,6 +54,13 @@ h2 {
 	padding-right: 80px
 }
 
+@media (max-width : 890px) {
+	.disappear {
+		display: none;
+		background: none;
+	}
+}
+
 h3 {
 	font-weight: 600;
 	line-height: 1.2;
