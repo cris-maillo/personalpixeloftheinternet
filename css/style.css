@@ -18,12 +18,25 @@ html, body {
 	line-height: 1.6;	
 }
 
-.bannert {
+.bannercontainer {
+	white-space: nowrap;
 	border-bottom: 1px solid #000000;
 	height: 30px;
 	width: 100%;
 	overflow: hidden;
 }
+
+/*
+.bannercontainer .reversed{
+	transform: rotateY(180deg)
+}*/
+
+.bannercontainer .bannerscript{
+	white-space:nowrap;
+    display:inline;
+    width:auto;
+}
+
 	
 body, ul, ol, dl {
 	margin: 0;
