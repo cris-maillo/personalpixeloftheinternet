@@ -4,17 +4,15 @@
 	margin: 0;
 }
 
-/* @font-face {
-	font-family: "HKGroteskWide-Light";
-	src: url("../css/HKGroteskWide-Light.woff") format("woff"),
-  } 
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap');
+@font-face {
+	font-family: HKGroteskmine;
+	src: url(./HKGroteskmine.woff);
+  }
+  
 
 html, body {
 	min-height: 100%;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: HKGroteskmine;
 	font-weight: 300;
 	color: #000000;
 	line-height: 1.6;	
@@ -122,10 +120,31 @@ hr {
 	text-align: right;
 }
 
+
+tinyblur{
+    display: block;
+}
+
+a.one:hover + tinyblur{
+    display: block;
+}
+
+a.two:hover tinyblur{
+    display: block;
+}
+
 .navbar li {
 	display: inline;
 	font-size: 20px;
   }
+
+.navbar navitem li {
+	background-image:url(../imgs/tinyblur.svg) no-repeat center 100px;
+	background-size: 400px auto;
+	background-position:center;
+	width:100px;
+	height:100px;
+}
 
 .navbar a{
 	padding: 10px;
@@ -133,6 +152,7 @@ hr {
 	float: right;
 }
 
+/*
 .navbar a:hover{
 	border-bottom: 1px #000 solid;
-}
+}*/
