@@ -129,14 +129,14 @@ span:before{
 }
 
 @media (max-width : 600px) {
-	.mobile {
+	.desktop {
 		display: none;
 		background: none;
 	}
 }
 
 @media (min-width : 600px) {
-	.desktop {
+	.mobile {
 		display: none;
 		background: none;
 	}

@@ -44,12 +44,20 @@
     <img src="./imgs/smiley.png" style="width:20px; position:absolute; top: 55px; left: 380px; overflow: hidden"/>
   </div>
 
-  <div>
+  <div class="mobile">
+    <img src="./imgs/ellipse.svg" style="width:140px; position:absolute; top: -20px; left: 100px; overflow: hidden"/>
+  </div>
+
+  <div class="desktop">
     <img src="./imgs/ellipse.svg" style="width:200px; position:absolute; top: -20px; left: 100px; overflow: hidden"/>
   </div>
 
-  <div>
+  <div class="desktop">
     <img src="./imgs/ellipse.svg" style="width:200px; position:absolute; top: -20px; left: 100px; overflow: hidden; transform:rotate(10deg);"/>
+  </div>
+
+  <div class="mobile">
+    <img src="./imgs/ellipse.svg" style="width:140px; position:absolute; top: -20px; left: 100px; overflow: hidden; transform:rotate(10deg);"/>
   </div>
 
   <div class="bannercontainer">
@@ -57,7 +65,8 @@
     </div>
   
   <div class="grid">
-      <h1 style="font-size: 60px; min-width:400px"><a href="index.html">Cris Maillo</a></h1>
+      <h1 class="desktop" style="font-size: 60px; min-width:400px"><a href="index.html">Cris Maillo</a></h1>
+      <h1 class="mobile" style="font-size: 40px; min-width:400px; padding-left: 20px;"><a href="index.html">Cris Maillo</a></h1>
       <h2 class="disappear" style="font-size: 20px">digital garden</h2>
   </div>
   
@@ -65,7 +74,7 @@
     <hr>
   </div>
 
-  <div class="navbar">
+  <div class="navbar desktop">
       <nav>
         <ul>          
           <li><div class="navitem"><a href="about.html">About</a></div></li>
@@ -76,16 +85,30 @@
       </nav>
   </div>
 
+  <div class="navbar mobile" style="padding-left: 10px; padding-right: 30px;">
+    <nav>
+      <ul>          
+        <li><div class="navitem"><a href="about.html" style="font-size: 16px; padding: 10px;">About</a></div></li>
+        <li><div class="navitem"><a href="media.html" style="font-size: 16px; padding: 10px;">Media</a></div></li>
+        <li><div class="navitem"><a href="projects.html" style="font-size: 16px; padding: 10px;">Projects</a></div></li>
+        <li><div class="navitem"><a href="text.html" style="font-size: 16px; padding: 10px;">Text</a></div></li>
+      </ul>
+    </nav>
+</div>
+
   <div class="intro">
-      <h3>welcome to my digital garden,</h3>
-      <h4 style="padding-top: 40px; max-width:880px">all of my plants die so I hope I can keep this one alive. During your walk through my garden, there is just one thing I ask of you: remember that everything you see is by me for me. </h4>
-      <h4 style="padding-bottom:270px">Basically, <b>don’t step on the grass.</b></h4>
+      <h3 class="mobile" style="padding-left:20px">welcome to my digital garden,</h3>
+      <h4 class="mobile" style="padding-top: 20px; max-width:900px; padding-left:20px; padding-right: 50px;">all of my plants die so I hope I can keep this one alive. During your walk through my garden, there is just one thing I ask of you: remember that everything you see is by me for me. </h4>
+      <h4 class="mobile" style="padding-bottom:270px; padding-left:20px">Basically, <strong>don’t step on the grass.</strong></h4>
+      <h3 class="desktop">welcome to my digital garden,</h3>
+      <h4 class="desktop" style="padding-top: 40px; max-width:880px">all of my plants die so I hope I can keep this one alive. During your walk through my garden, there is just one thing I ask of you: remember that everything you see is by me for me. </h4>
+      <h4 class="desktop" style="padding-bottom:270px">Basically, <b>don’t step on the grass.</b></h4>
 
   </div>
 
   <div class="footer">
-    <p class="desktop" style="font-size: 14px; margin-left: 0px;">Connect with me <a href="https://twitter.com/cristina_maillo" target="_blank">@cris.maillo</a> //  <a href="https://www.blackgirlscode.com/donate/" target="_blank">Buy me a coffee </a></p>
-    <p class="mobile" style="font-size: 20px; margin-left: 30px;">Connect with me <span></span> <a href="https://twitter.com/cristina_maillo" target="_blank">@cris.maillo</a> <span></span><span></span> // <span></span><span></span> Buy me a coffee <span></span> <a href="https://www.blackgirlscode.com/donate/" target="_blank">link</span></a></p>
+    <p class="mobile" style="font-size: 14px; margin-left: 0px;">Connect with me <a href="https://twitter.com/cristina_maillo" target="_blank">@cris.maillo</a> //  <a href="https://www.blackgirlscode.com/donate/" target="_blank">Buy me a coffee </a></p>
+    <p class="desktop" style="font-size: 20px; margin-left: 30px;">Connect with me <span></span> <a href="https://twitter.com/cristina_maillo" target="_blank">@cris.maillo</a> <span></span><span></span> // <span></span><span></span> Buy me a coffee <span></span> <a href="https://www.blackgirlscode.com/donate/" target="_blank">link</span></a></p>
   </div>
 
   
