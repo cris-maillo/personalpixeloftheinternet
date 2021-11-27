@@ -128,6 +128,20 @@ span:before{
 	font-family: monospace;
 }
 
+@media (max-width : 600px) {
+	.mobile {
+		display: none;
+		background: none;
+	}
+}
+
+@media (min-width : 600px) {
+	.desktop {
+		display: none;
+		background: none;
+	}
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
@@ -146,27 +160,12 @@ span:before{
 }
 
 
-tinyblur{
-    display: block;
-}
-
-a.one:hover + tinyblur{
-    display: block;
-}
-
-a.two:hover tinyblur{
-    display: block;
-}
-
 .navbar li {
 	display: inline;
 	font-size: 20px;
   }
 
 .navbar navitem li {
-	background-image:url(../imgs/tinyblur.svg) no-repeat center 100px;
-	background-size: 400px auto;
-	background-position:center;
 	width:100px;
 	height:100px;
 }
@@ -177,7 +176,18 @@ a.two:hover tinyblur{
 	float: right;
 }
 
-/*
+  /*
+a>blur { 
+    display: none; 
+}
+a:hover>blur { 
+    display: block; 
+}
+
+  
+
+
+
 .navbar a:hover{
 	border-bottom: 1px #000 solid;
 }*/
