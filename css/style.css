@@ -5,14 +5,29 @@
 }
 
 @font-face {
-	font-family: HKGroteskmine;
-	src: url(./HKGroteskmine.woff);
-  }
+	font-family: HKGroteskWide-Light;
+	src: url(./HKGroteskWide-Light.woff);
+}
+
+@font-face {
+	font-family: HKGroteskWide-SemiBold;
+	src: url(./HKGroteskWide-SemiBold.woff);
+}
+
+@font-face {
+	font-family: HKGroteskWide-Regular;
+	src: url(./HKGroteskWide-Regular.woff);
+}
+
+@font-face {
+	font-family: HKGroteskWide-Medium;
+	src: url(./HKGroteskWide-Medium.woff);
+}
   
 
 html, body {
 	min-height: 100%;
-	font-family: HKGroteskmine;
+	font-family: HKGroteskWide-Light;
 	font-weight: 300;
 	color: #000000;
 	line-height: 1.6;	
@@ -25,11 +40,6 @@ html, body {
 	width: 100%;
 	overflow: hidden;
 }
-
-/*
-.bannercontainer .reversed{
-	transform: rotateY(180deg)
-}*/
 
 .bannercontainer .bannerscript{
 	white-space:nowrap;
@@ -60,7 +70,7 @@ h2 {
 	font-weight: 300;
 	line-height: 1.2;
 	margin: 0px 0px 0px 0;
-	padding-top: 65px;
+	padding-top: 55px;
 	justify-self: right;
 	padding-right: 80px
 }
@@ -118,10 +128,15 @@ hr {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+	
 }
 
-span:after, 
-span:before{
+span{
+	display:inline-block;
+}
+
+.lines:after, 
+.lines:before{
     content:"\00a0\00a0\00a0\00a0\00a0";
     text-decoration:line-through;
 	text-decoration-thickness: 1px;
@@ -165,6 +180,10 @@ span:before{
 	font-size: 20px;
   }
 
+.navbar navitem {
+	background-image: url(../imgs/tinyblur.svg);
+}
+
 .navbar navitem li {
 	width:100px;
 	height:100px;
@@ -174,20 +193,13 @@ span:before{
 	padding: 10px;
 	margin: 0 5px;
 	float: right;
+	
 }
-
-  /*
-a>blur { 
-    display: none; 
-}
-a:hover>blur { 
-    display: block; 
-}
-
-  
-
-
 
 .navbar a:hover{
-	border-bottom: 1px #000 solid;
-}*/
+	background-image: url(../imgs/tinyblur.svg);
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
