@@ -1,7 +1,7 @@
 $(function() {
     var bannercontainer = $('div.bannercontainer');
     bannercontainer.each(function() {
-    var mar = $(this),indent = mar.width();
+    var mar = $(this),indent = 0;
     mar.bannercontainer = function() {
         indent--;
         mar.css('text-indent',indent);
