@@ -203,3 +203,23 @@ span{
 	background-position: center;
 }
 
+.article {
+	overflow-y: auto;
+}
+
+.article::-webkit-scrollbar-track {
+	border-radius: 20px;
+	background-color: transparent;
+	border: 1px solid black;
+  }
+  
+.article::-webkit-scrollbar {
+	width: 8px;
+	background-color: transparent;
+  }
+  
+.article::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: #000;
+  }
+
